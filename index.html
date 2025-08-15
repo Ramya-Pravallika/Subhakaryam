@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Use a custom favicon -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACBUlEQVR4Ab1XA8zdUBD+zF9lSAukC8AF4ALoAuACsAKxAqACsAKwApAKSAsgFcAKkBZIK1BCZ/Y5e/Nul5vcm5yZ7OTb/f7+/e5L8l9VdTFfRjAY/G+AZRkAY855N2BVBkC88/0Adpdz3lHAnAAgBwA4AKhQzrkOAGoAVQ4A3M45l2a/s0APgB8A3M45f5iASgEAc3POFzPARwBwzjl/BMAfAMzm3H8G4GMA+CDn/CMA/w3ALADf5Jx3SgA+B4A1GQF0iMceAKYA+LbudU4AcgBUTgA2AGQBXQE8M+c8JgA3ADQCkCgAfwBgnHO+k4AHAHIAo41UeQWwvQ5gKAD+zjn/mAA8APk+gI/k8m4AxgEgfdb7k3M+lYAXATQCsHgA/gDgMuP9DAAmSgCmynm2m83mXwC0CgBsbTbbzJ/5QgA+l/f88D2A+wHwSgC+5px/B+Cb1q8A2Fk2mw2k1WqB8gGgZDKZDEBfMpmML4BiiEae570AVOfcTwPguQDIe573A4CiKIoA+EVRFAUAz3MejUbvBmCUSqU3gBEYhuEAYDqdTg8AMIZh+AIAIsireZ73A8APURR/B2CgVCp9G4BPGIb/A/BtOp1+BMBfhmFcA/ijLMsyQNM0xAA0TdMcQFmW/R/AfzRN8/sAfpZlX26322UA32q3218AXgpxc+B2N9AAAAAASUVORK5CYII=" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Subhakaryam - Authentic Vedic Pooja Services in Hyderabad</title>
+  
+  <meta name="description" content="Experience authentic Vedic poojas and rituals in Hyderabad with Subhakaryam. Our learned priests perform traditional ceremonies for divine blessings, peace, and prosperity."/>
+  <meta name="keywords" content="pooja services, vedic rituals, pandits in hyderabad, subhakaryam, ganapathi homam, satyanarayana vratam, rudrabhishekam, hindu priest, chandi homam, pratyangira homam"/>
+  <link rel="canonical" href="https://your-domain.com/" /> <!-- TODO: Update this URL after deployment -->
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://your-domain.com/"/> <!-- TODO: Update this URL after deployment -->
+  <meta property="og:title" content="Subhakaryam - Authentic Vedic Pooja Services"/>
+  <meta property="og:description" content="Bringing the divine experience of traditional Vedic poojas directly to your home with authenticity and reverence."/>
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg"/> <!-- TODO: Update with a link to an image (e.g., priest-ritual.jpg) -->
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="https://your-domain.com/"/> <!-- TODO: Update this URL after deployment -->
+  <meta property="twitter:title" content="Subhakaryam - Authentic Vedic Pooja Services"/>
+  <meta property="twitter:description" content="Bringing the divine experience of traditional Vedic poojas directly to your home with authenticity and reverence."/>
+  <meta property="twitter:image" content="https://your-domain.com/og-image.jpg"/> <!-- TODO: Update with a link to an image -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'serif-telugu': ['"Noto Serif Telugu"', 'serif'],
+            'sans-poppins': ['"Poppins"', 'sans-serif'],
+          },
+          colors: {
+            'primary': '#8c1515', // Richer maroon
+            'secondary': '#602419',
+            'background-light': '#fefbf3', // Warmer off-white
+            'background-main': '#fde7d0',
+            'text-dark': '#4a2e18',
+            'text-light': '#fbe8c8',
+            'accent-gold': '#ffc72c', // Deeper gold
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fde7d0;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: opacity 0.75s ease;
+    }
+    #preloader.loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .preloader-om {
+      font-size: 4rem;
+      color: #8c1515;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .preloader-text {
+        font-family: 'Noto Serif Telugu', serif;
+        font-size: 2rem;
+        color: #602419;
+        margin-top: 1rem;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+    }
+    /* Styles for scroll animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+
+<!-- JSON-LD Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Subhakaryam",
+  "image": "https://your-domain.com/og-image.jpg",
+  "url": "https://your-domain.com/",
+  "telephone": "+918008433752",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "addressCountry": "IN"
+  },
+  "description": "Subhakaryam offers authentic Vedic pooja services and rituals in Hyderabad, performed by experienced priests to bring divine blessings, peace, and prosperity.",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Housewarming (Gruha Pravesham)" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marriage Ceremony" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chandi Homam" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Satyanarayana Vratam" } }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-main font-sans-poppins text-text-dark leading-relaxed">
+  <div id="preloader">
+    <div class="preloader-om">ॐ</div>
+    <div class="preloader-text">Subhakaryam</div>
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+  <!--
+    Hidden chant audio for autoplay.
+    NOTE: This uses a placeholder "Om" chant from the web to ensure it works.
+    If you have your own 'chant.mp3' file, add it to your project's main folder
+    and change the src below to "/chant.mp3".
+  -->
+  <audio id="chant-audio" src="https://archive.org/download/OM-Mantra/OM.mp3" autoplay loop></audio>
+  <script>
+    // Preloader script
+    window.addEventListener('load', () => {
+      document.getElementById('preloader').classList.add('loaded');
+    });
+
+    // Audio script
+    document.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("chant-audio");
+      audio.volume = 0.3; // Softer background volume
+      audio.autoplay = true;
+    
+      audio.play().catch(() => {
+        console.warn("Autoplay blocked — waiting for user interaction...");
+        const startChant = () => {
+          audio.play().then(() => {
+            console.log("Chant started after interaction");
+            document.removeEventListener("click", startChant);
+            document.removeEventListener("touchstart", startChant);
+          }).catch(err => console.error("Error playing audio on interaction:", err));
+        };
+        document.addEventListener("click", startChant);
+        document.addEventListener("touchstart", startChant);
+      });
+    });
+  </script>
+</body>
+</html>
